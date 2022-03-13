@@ -1,0 +1,47 @@
+<!--pages/show_1/show_1.wxml-->
+<view class="out">
+<view class="center">订单详情页面</view>
+
+
+<view>
+  <view class="bg_color">
+  <view class="center_1">
+    <view class="log"><text>任务性质：{{list.title}}</text></view>
+    <view class="log"><text>发件人：{{list.name}}</text></view>
+    <view class="log"><text>联系电话：{{list.telephone}}</text></view>
+    <view class="log"><text>截止服务时间：{{list.deadline}}</text></view>
+    <view class="log"><text>货物送到：{{list.adress}}</text></view>
+    <view class="log"><text>预计的支付金额：{{list.money}}元</text></view>
+    <view class="log"><text>接单人姓名：{{list.people_name}}</text></view>
+    <view class="log"><text>接单人电话：{{list.people_telephon}}</text></view>
+  </view>
+  <view class="out_1">
+  <view class="color">
+  <vie class="text_1"><text>上传文件路径名为：</text></vie>
+  <view clss="image_1"><text>{{list.fil_name}}</text></view>
+  </view>
+  </view>
+  <view><button type="primary"style="position: relative; left: -26rpx; top: 350rpx" style="width: 472rpx; height: 80rpx; display: block; box-sizing: border-box; left: -10rpx; top: 980rpx; position: relative" bindtap="onClick">接下订单</button></view>
+  </view>
+  <text>填入接单人的信息：</text>
+</view>
+<view class="line">
+  <view class="row">
+      <view><input type="text" placeholder="接单人:（必填）" placeholder-style="color:black"	disabled/></view>
+      <view><input type="text" placeholder="建议输入姓名，最多6个字" maxlength="6" bindinput="onPeople_name"/></view>
+    </view>
+    <view class="row">
+      <view><input type="text" placeholder="联系电话:（必填 ）" placeholder-style="color:black" 	disabled/></view>
+      <view><input type="text" placeholder="建议输入电话号码合法"  maxlength="11" bindinput="onPeople_telephone"/></view>
+    </view>
+    <view class="row">
+      <view><input type="text" placeholder="拿货地址:（必填 ）" placeholder-style="color:black" 	disabled/></view>
+      <view><input type="text" placeholder="建议写好地址方便交流"  bindinput="onPeople_adress"/></view>
+    </view>
+    <view class="row">
+      <view><input type="text" placeholder="预计的支付金额：:（必填 ）" placeholder-style="color:black" 	disabled/></view>
+      <view><input type="text" placeholder="限制3位有效数字"  maxlength="3" bindinput="onPeople_money"/></view>
+    </view>
+    
+  </view>
+</view>

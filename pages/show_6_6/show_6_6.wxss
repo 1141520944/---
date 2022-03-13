@@ -1,0 +1,62 @@
+/* pages/show_1/show_1.wxss */
+.out{
+  background-color: rgb(189, 245, 194);
+  width: 100%;
+  height: 10000rpx;
+  padding: 10rpx 10rpx;
+  box-sizing: border-box;
+  
+}
+.center{
+  background-color: white;
+  padding-left: 250rpx;
+  padding-top: 20rpx;
+  padding-bottom:10rpx;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 40rpx;
+}
+.center_1{
+  background-color: white;
+}
+.log{
+  padding: 20rpx;
+}
+.log text{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:large
+}
+/* 用户图片 */
+.out_1{
+ height: 100%;
+ width:100%;
+ background-color: yellowgreen;
+}
+.color{
+  background-color: white;
+  padding: 10rpx 10rpx;
+
+}
+image{
+  padding: 10rpx 10rpx;
+   width:100%;
+  border-radius: 50rpx;
+}
+/* 发件人样式 */
+.row{
+  background-color: rgb(252, 253, 252);
+  border-radius: 20rpx;
+}
+.line{
+  background-color: white;
+  border-radius: 20rpx;
+  border: 1rpx solid  rgb(241, 239, 239);
+  
+  
+}
+
+.row input{
+  border: 1rpx solid rgb(219, 219, 219);
+  padding-left:20rpx ;
+  border-radius: 10rpx;
+  min-height: 100rpx;
+}

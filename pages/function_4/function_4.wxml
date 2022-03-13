@@ -1,0 +1,38 @@
+<!--pages/function_4/function_4.wxml-->
+<view class="out">
+<view class="bg_color">
+<view class="center">学习资料的展示：</view>
+
+<!--  校园趣闻-->
+<view class="out_1">
+  
+  <view class="xian_1"></view>
+  
+  <view class="image_1"><image src="http://5b0988e595225.cdn.sohucs.com/images/20190905/8a69b70d16044734ad5a3741e63b42aa.png"></image></view>
+  <view class="log"><text> 注：由于我们也想不到什么具体的功能在这里给大家分享一些我们学习的资料：仅供参考：...</text></view>
+  <view class="xian_2"></view>
+  <!--信息 -->
+  <view class="div_1">
+  <view><text>由于我们俩都是软件的学生，我们向大家分享一些学习踩过得坑：</text></view>
+  <view class="center"><button type="primary" size="mini" >点击进入</button></view>
+  <view class="xian_2" bindtap="onclick"></view>
+  </view>
+  <view class="div_1">
+  <view><text>这里是我们分析关于爬虫的学习：</text></view>
+  <view class="center"><button type="primary" size="mini" >点击进入</button></view>
+  <view class="xian_2" bindtap="onclick"></view>
+  </view>
+  <view class="div_1">
+  <view><text>这里是我们关于算法的学习：</text></view>
+  <view class="center"><button type="primary" size="mini" >点击进入</button></view>
+  <view class="xian_2" bindtap="onclick"></view>
+  </view>
+  
+
+
+
+
+
+  </view>
+</view>
+</view>

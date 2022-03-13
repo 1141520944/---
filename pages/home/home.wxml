@@ -1,0 +1,54 @@
+<!-- pages/user/index.wxml -->
+<!-- 登录模块开始 -->
+<view class="user_info_wrap">
+  <view wx:if="{{userInfo.avatarUrl}}" class="user_img_wrap">
+    <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="user_btn">
+    <button type="primary" plain open-type="getUserInfo" bindtap="getUserProfile">登录</button>
+  </view>
+</view>
+<!-- 登录模块结束 -->
+<view class="user_content">
+  <view class="user_main">
+    <!-- 余额 -->
+    <view class="money_wrap">
+      <navigator>
+        <!-- <image class="yue_img"></image> -->
+        <view class="num">0.00</view>
+        <view class="name">余额</view>
+      </navigator>
+      <navigator>
+        <!-- <image class="yue_img"></image> -->
+        <view class="num">0.00</view>
+        <view class="name">优惠券</view>
+      </navigator>
+    </view>
+    <view class="other_item">
+      <navigator class="item" bindtap="ShowNews">
+        <text>订阅消息</text>
+        <text class="iconfont icon-arrow-right"></text>
+      </navigator>
+      <navigator class="item" url="/pages/location/location">
+        <text>我的地址: {{ne}}</text>
+        <text class="iconfont icon-arrow-right"></text>
+      </navigator>
+      <navigator class="item">
+        <text>提现</text>
+        <text class="iconfont icon-arrow-right"></text>
+      </navigator>
+      <navigator class="item">
+        <text>在线客服</text>
+        <text class="iconfont icon-arrow-right"></text>
+      </navigator>
+      <navigator class="item">
+        <text>帮助中心</text>
+        <text class="iconfont icon-arrow-right"></text>
+      </navigator>
+    </view>
+  </view>
+</view>

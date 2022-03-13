@@ -1,0 +1,7 @@
+<!-- 文章页面 -->
+<view class="out">
+  <view><text class="title">开发一：大一我的坑</text></view>
+  <view class="xian_1"></view>
+  <view><image src=""></image></view>
+</view>
+

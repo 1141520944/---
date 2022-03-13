@@ -1,0 +1,154 @@
+/* pages/order/message/message.wxss */
+/*捎话 */
+.message_nav{
+  position: fixed;
+  width: 100%;
+ }
+ .section{
+ width:96%;
+ height:220rpx;
+ margin-left:5px;
+ }
+ .message1{
+  width:96%;
+  height:210rpx;
+  margin-top: 30rpx;
+  font-size: 68%;
+  margin-left:20px;
+ }
+ .circle{
+  height:35rpx;
+  width:35rpx;
+  border-radius: 50%;
+  border: 1rpx solid #ccc;
+  display:inline-block;
+  margin:28rpx 45rpx auto 50rpx;
+  
+ }
+ .fast{
+  position:relative;
+  top:-50rpx;
+  font-size:90%;
+  background:#f4f4f4;
+  line-height:100rpx;
+  text-indent:2em;
+ }
+ .item{
+ position:relative;
+ border-bottom:1px solid #f4f4f4;
+ padding-bottom:10px;
+ top: -60rpx;
+ }
+ .item:hover{ 
+ background:pink; 
+ color: #f4f4f4; 
+ } 
+ .message_font{
+  font-size:80%;
+  font-family:"微软雅黑";
+  font-weight:blod;
+  display:inline-block;
+  position:relative;
+  top:-5rpx;
+ }
+ .submit{
+  outline:none;
+  border:none;
+  list-style: none;
+  width:100%;
+  height: 100rpx;
+  background: #fed1d6;
+  position: relative;
+  top:160rpx;
+  line-height: 100rpx;
+  -webkit-border-radius: 1rpx; 
+  -moz-border-radius: 1rpx; 
+  border-radius: 1rpx; 
+  -webkit-appearance : none ; 
+ }
+ button::after{
+  border:none;
+  }
+ .item{
+ position:relative;
+ border-bottom:1px solid #f4f4f4;
+ padding-top:5px;
+ top: -60rpx;
+ width:100%;
+ padding-left: 45rpx;
+ }
+ .checkboxChange{
+  position:relative;
+  top:15rpx;
+  font-size: 68%;
+  border-radius: 50%;
+ }
+ /* .circle{
+  border-radius: 50%;
+ } */
+ /* 添加图片 */
+  /* 图片 */
+.top_name{
+  padding: 20rpx 20rpx;
+}
+  .images_box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 10rpx;
+   
+   }
+   .img-box{
+    border: 5rpx;
+    border-style: solid;
+    border-color: rgba(163, 162, 162, 0.452);
+    width: 200rpx;
+    height: 200rpx;
+    margin-left: 35rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    position: relative;
+    border-radius: 10rpx;
+   }
+   /* 删除图片 */
+   .img-delect{
+    width:50rpx;
+    height:50rpx;
+    border-radius:50%;
+    position:absolute;
+    right:-20rpx;
+    top:-20rpx;
+   }
+   .img{
+    width: 100%;
+    height: 100%;
+   }
+   .jiage{
+    height: 60rpx;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+   }
+   .rmb{
+    width: 280rpx;
+    border: 2rpx solid rgb(199, 197, 197);
+   }
+   button{
+    margin-top: 20rpx;
+    background-color: green;
+   }
+   .radio-group{
+    display: flex;
+   }
+   /* 名字 */
+   .out{
+     padding: 0rpx 20rpx;
+     box-sizing: border-box;
+     border: 1px solid rgb(216, 215, 215);
+   }

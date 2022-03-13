@@ -1,0 +1,27 @@
+<!--pages/show_1/show_1.wxml-->
+<view class="out">
+<view class="center">订单详情页面</view>
+
+
+<view>
+  <view class="bg_color">
+  <view class="center_1">
+    <view class="log"><text>任务性质：{{list.title}}</text></view>
+    <view class="log"><text>发件人：{{list.name}}</text></view>
+    <view class="log"><text>联系电话：{{list.telephone}}</text></view>
+    <view class="log"><text>截止服务时间：{{list.deadline}}</text></view>
+    <view class="log"><text>货物送到：{{list.adress}}</text></view>
+    <view class="log"><text>预计的支付金额：{{list.money}}元</text></view>
+    <view class="log"><text>接单人姓名：{{list.people_name}}</text></view>
+    <view class="log"><text>接单人电话：{{list.people_telephon}}</text></view>
+  </view>
+  <view class="out_1">
+  <view class="color">
+  <vie class="text_1"><text>上传文件路径名为：</text></vie>
+  <view clss="image_1"><text>{{list.fil_name}}</text></view>
+  </view>
+  </view>
+  </view>
+</view>
+<button type="primary" size="mini" bindtap="onDelete" style="position: relative; left: 278rpx; top: 88rpx">删除订单</button>
+</view>

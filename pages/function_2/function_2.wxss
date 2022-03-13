@@ -1,0 +1,139 @@
+/* pages/show/show.wxss */
+/* 每一部分的表单的结构 */
+.out{
+  padding-top:16rpx ;
+  background-color: #dfe0e0;
+}
+.mean{
+  background-color: #dfe0e0;
+  padding: 6rpx 10rpx;
+  box-sizing: border-box;
+  height: 100%;
+}
+.row{
+  background-color: rgb(252, 253, 252);
+  border-radius: 20rpx;
+}
+.line{
+  background-color: white;
+  border-radius: 20rpx;
+  border: 1rpx solid  rgb(241, 239, 239);
+  
+}
+
+.row input{
+  border: 1rpx solid rgb(219, 219, 219);
+  padding-left:20rpx ;
+  border-radius: 10rpx;
+  min-height: 100rpx;
+}
+/* 多选框 */
+.edg{
+  padding: 10rpx 10rpx;
+  
+}
+.out_2{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1rpx solid rgb(252, 252, 252);
+  border-radius: 10rpx;
+  padding:10rpx 20rpx;
+  background-color: white;
+}
+/* 上传图片 */
+page{
+  background-color: rgba(200, 198, 201, 0.527);
+ }
+ .pages{
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10rpx;
+ }
+ .top{
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  font-size: 50rpx;
+  background-color: white;
+  border-left: 8rpx solid rgb(251, 255, 252);
+  border-bottom: 1rpx solid rgba(117, 116, 116, 0.527);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .top_name{
+  margin-left: 20rpx;
+ }
+ .top_name_1{
+   padding-right: 20rpx;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* 图片 */
+ .images_box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: white;
+  border-radius: 10rpx;
+ }
+ .img-box{
+  border: 5rpx;
+  border-style: solid;
+  border-color: rgba(163, 162, 162, 0.452);
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+  border-radius: 10rpx;
+ }
+ /* 删除图片 */
+ .img-delect{
+  width:50rpx;
+  height:50rpx;
+  border-radius:50%;
+  position:absolute;
+  right:-20rpx;
+  top:-20rpx;
+ }
+ .img{
+  width: 100%;
+  height: 100%;
+ }
+ .jiage{
+  height: 60rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+ }
+ .rmb{
+  width: 280rpx;
+  border: 2rpx solid rgb(199, 197, 197);
+ }
+ button{
+  margin-top: 20rpx;
+  background-color: green;
+ }
+ .radio-group{
+  display: flex;
+ }
+/* /选择框 */
+.a{
+  border: 2px black;
+  background-color: black;
+}
+.b{
+  border:2px black;
+  background-color: red;
+}

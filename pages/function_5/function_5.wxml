@@ -1,0 +1,46 @@
+<!--pages/function_5/function_5.wxml-->
+<!--  校园趣闻-->
+<view class="out_1">
+  <view class="row_1">
+    <view><text></text></view>
+    <view><text>留言墙</text></view>
+    <view><text></text></view>
+  </view>
+  <view class="xian_1"></view>
+  
+  <view class="image_1">
+  <!-- 滑动 -->
+    <view>
+  <swiper indicator-dots autoplay interval="3000" circular indicator-color="rgba(255, 255, 255, 0.5)" indicator-active-color="white">
+    <swiper-item class="eadg">
+      <image src="https://kr.zutuanla.com/file/2021/0512/bc34d7dff0c308fa68ebe7f5b1332c20.jpg"mode="scaleToFill" ></image>
+    </swiper-item>
+    <swiper-item class="eadg">
+      <image src="https://i1.shaodiyejin.com/uploads/tu/201911/9999/1edc3c656b.jpeg"mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item class="eadg">
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fss2.meipian.me%2Fusers%2F19156280%2F87050e8bc90d421694a9fbb8eef5f319.jpg%3Fmeipian-raw%2Fbucket%2Fivwen%2Fkey%2FdXNlcnMvMTkxNTYyODAvODcwNTBlOGJjOTBkNDIxNjk0YTlmYmI4ZWVmNWYzMTkuanBn%2Fsign%2F568429e542a211cdc17900ef599c071e.jpg&refer=http%3A%2F%2Fss2.meipian.me&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649155003&t=40fee366f31c18d92d49a460daa16504" mode="scaleToFill"></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  </view>
+  <view class="edg_1"></view>
+  <view class="center_1"><button bindtap="LOVE">写下心里的声音</button></view>
+  <!--信息 -->
+  <view class="page" wx:for="{{ne}}">
+  <view class="out_2" >
+  <view class="line_1">
+    <image src="{{item.image_url}}"
+    mode="widthFix"></image>
+    <view class="line_2">
+      <view ><text>遗留的痕迹:</text></view><view><text>{{item.name}}</text></view>
+    </view>
+  </view>
+  <view class="line_3">
+    <view>留言：<text class="text_1">{{item.message}}</text></view>
+    <view class="xian_1"></view>
+  </view>
+  </view>
+</view>
+  </view>
+

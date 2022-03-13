@@ -1,0 +1,14 @@
+<!--pages/yuantu/yuantu.wxml-->
+<view class="out">
+<view class="center_1">
+<view>文件名为：</view>
+<view>{{list.fil_name}}</view>
+</view>
+<view class="edg"></view>
+<view>下载链接：</view>
+<view class="inpute"><input placeholder="{{list.file_url}}" disabled/></view>
+<view class="edg"></view>
+<view class="center_2">
+<button type="primary" size="mini" bindtap="onClick">下载按钮</button>
+</view>
+</view>

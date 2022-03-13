@@ -1,0 +1,6 @@
+<!--pages/location/location.wxml-->
+<view class="row">
+      <view><input type="text" placeholder="你的默认地址:（必填）" placeholder-style="color:black"	disabled/></view>
+      <view><input type="text" placeholder="输入您的默认地址"  bindinput="getLoction"maxlength="20"/></view>
+</view>
+<button bindtap="onadressMR">确认</button>

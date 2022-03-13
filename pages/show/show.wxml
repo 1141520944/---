@@ -1,0 +1,46 @@
+<!-- 头部 -->
+<!-- 我的历史记录 -->
+<view class="center_1"><text>我的历史记录</text></view>
+<view class="xian_1"></view>
+<view class="tabcontent">
+    <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="tabcell {{ activeIndex==index?'active':'' }} " bindtap="tabClick" bindtouchstart="{{item.tap}}">
+           {{item.title}}
+        </view>
+    </block>
+</view>
+<!-- 内容 -->
+<view class="xian_1"></view>
+<view class="edg_1"></view>
+
+<!-- 信息 -->
+<view class="image_1"><image src="http://5b0988e595225.cdn.sohucs.com/images/20190905/8a69b70d16044734ad5a3741e63b42aa.png"></image></view>
+  <view class="center_1"><text>{{title}}:订单信息</text></view>
+  <view class="xian_2"></view>
+  <!--信息 -->
+  <view class="page" wx:for="{{ne}}" >
+  <view class="out_2" >
+  <view class="line_1">
+    <image src="{{item.image_url}}"
+    mode="widthFix"></image>
+    <view class="line_2">
+      <view ><text>截止服务时间:</text></view><view><text>{{item.deadline}}</text></view>
+    </view>
+  </view>
+  <view class="line_3">
+    <view>备注：<text>{{item.beizhu}}</text></view>
+    <view class="xian_1"></view>
+    <view class="row_2">
+      <view style="width: 384rpx; height: -4rpx; display: block; box-sizing: border-box">价格：<text class="coco">￥{{item.money}}</text></view>
+       <view class="bobo"><input placeholder="{{item.zhuangtai}}接单" placeholder-style="color:white" disabled/></view>
+    </view>
+    <view>收件人：<text>{{item.name}}</text></view>
+    <view>接单人：<text>{{item.people_name}}</text></view>
+    <view class="xian_2"></view>
+    <view>
+      <navigator url="/pages/{{page}}/{{page}}?id={{item._id}}">
+    <button type="primary" size="mini">查看详情</button></navigator></view>
+    <view class="xian_2"></view>
+  </view>
+  </view>
+</view>

@@ -1,0 +1,335 @@
+/* pages/index/index.wxss */
+/* 设置边距 */
+/* .mean{
+  padding: 20rpx 150rpx;box-sizing: border-box;
+  background-color: 	#4EEE94;
+}
+.header{
+  width: 100%;
+  height: 90rpx;
+  border: 2rpx solid red;
+}
+
+设置文本框 */
+.search{
+  height: 74rpx;
+  width: 500rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: 	center;
+  background-color: white;
+  border-radius: 50rpx;
+}
+.search input{
+padding-top: 15rpx;
+padding-left: 80rpx;
+}
+.search icon{
+  padding-top: 8rpx;
+}
+/* 间距 */
+.padding_{
+  padding: 20rpx 0;
+}
+/* 设置滑动图片 */
+.meau_1{
+  padding: 10rpx 10rpx;
+  background-color: #d6d5d5;
+  
+}
+.eadg image{
+ 
+  width: 100%;
+
+}
+/* 公告 */
+.backCO{
+  background-color: #FDF5E6;}
+  /* #FDF5E6 */
+.a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.a image{
+  
+  height: 37rpx;
+  width: 37rpx;
+  background-color: #FDF5E6;
+ position: absolute;
+ z-index: 1;
+}
+.animation{
+  width: 100%;
+  transform: translateX(100%);
+  top: 45%;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+/* 导航栏 */
+.meau_2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(134, 230, 230);
+  padding-left:50rpx ;
+}
+#a{
+  background-color: rgb(134, 230, 230);
+
+}
+.log{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding: 0 40rpx;
+  width: 100%;
+ 
+}
+.log image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.log text{
+  padding-top: 10rpx;
+  padding-bottom: 5rpx;
+  font-size: 25rpx;
+}
+/* 校园趣闻 */
+/* .out_1{
+  background-color: white;
+  padding: 10rpx 10rpx;
+  border-radius: 30rpx;
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.center image{
+  width: 100%;
+  height: 300rpx;
+  border-radius: 30rpx;
+}
+.edg{
+  padding-bottom: 10rpx;
+} */
+/* 订单展示 */
+/* .mean_3{
+  background-color:#8de2c1;
+  padding-top: 10rpx;
+  height: 500rpx;
+  
+}
+.out{
+ 
+  background-color:#f7f5f5;
+ 
+}
+.row{
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid rgb(255, 254, 254);
+  border-radius: 50rpx;
+  background-color:#8de2c1;
+} */
+/* #8de2c1;   #f7f5f5;*/
+/* .pic image{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50rpx;
+}
+.day{
+  font-size: 28rpx;
+  color:#696969;
+  padding-top:8rpx ;
+  padding-left: 20rpx; 
+}
+.text{
+  padding-left: 50rpx ;
+}
+.between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.between .title{
+  font-size: 50rpx;
+  padding-bottom: 20rpx;
+}
+.between .money{
+  padding-right: 30rpx;
+  font-size: 50rpx;
+  color: red;
+}
+.text .time_1{
+  font-size: 35rpx;
+}
+.out_BT{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.out_BT .time_2{
+  font-size: 28rpx;
+  color:#696969;
+  padding-top:10rpx ;
+  padding-right: 5rpx;
+} */
+
+/* 订单2.0 */
+.out_1{
+padding: 10rpx 10rpx;
+background-image: url(https://t7.baidu.com/it/u=3168329137,3263381309&fm=193&f=GIF);
+}
+.row_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10rpx;
+}
+.xian_1{
+  
+  width: 100%;
+  background-color: rgb(241, 155, 155);
+  height:2rpx;
+}
+.edg_1{
+  background-color: rgb(255, 255, 255);
+  padding:5rpx 0;
+  height: 10rpx;
+  width: 100%;
+  
+}
+/* 图片 */
+.image_1{
+  padding: 10rpx 0;
+  background-color: rgb(241, 239, 239);
+  border-radius: 10rpx; 
+  
+}
+.image_1 image{
+  
+  height:250rpx;
+  width: 100%;
+  border-radius: 10rpx; 
+}
+/* 信息 */
+.center_1 text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: larger;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 40rpx;
+  padding: 10rpx 0;
+}
+.xian_2{
+  width: 100%;
+  background-color: rgb(175, 252, 175);
+  padding: 2rpx 0;
+}
+/* 样板 */
+.page{
+
+  padding: 15rpx 0;
+  background-color: rgb(240, 236, 236);
+  background-image: url(https://t7.baidu.com/it/u=3168329137,3263381309&fm=193&f=GIF);
+
+}
+.out_2{
+ padding: 20rpx 0;
+ box-sizing: border-box;
+ background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.line_1{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.line_1 image{
+  width:200rpx;
+  padding: 10rpx 0;
+  border-radius:30rpx ;
+}
+.line_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20rpx;
+}
+.line_2 text{
+  font-size: 28rpx;
+  color: #929090;
+}
+.line_3{
+  padding-left:20rpx;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+}
+.row_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bobo{
+  background-color: rgb(8, 207, 85);
+  border-radius: 40%;
+}
+.bobo input{
+ height: 50rpx; 
+  width: 110rpx;
+}
+.coco{
+  color: red;
+  font-size: 50rpx;
+ 
+}
+.edg_1{
+  padding-right:20rpx ;
+}
+/* 图片 */
+/* .bgImage{
+  background-image: url(https://t7.baidu.com/it/u=3168329137,3263381309&fm=193&f=GIF);
+} */
+/* 动态栏 */
+.tabcontent {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  border-top: 1px solid #f2f5fa;
+  border-bottom: 1px solid #f2f5fa;
+}
+
+.tabcell {
+  width: 50%;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.active::after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  height: 4px;
+  background: var(--themeColor);
+  left: 50%;
+  margin-left: -40px;
+  bottom: 0px;
+}

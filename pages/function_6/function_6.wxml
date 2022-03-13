@@ -1,0 +1,66 @@
+<!--pages/show/show.wxml-->
+<view class="out">
+<view class="mean">
+  <view class="line">
+    <view class="row">
+      <view><input type="text" placeholder="出件人:" placeholder-style="color:black"	disabled/></view>
+      <view><input type="text" placeholder="建议输入姓名，最多6个字" maxlength="6" bindinput="onName"/></view>
+    </view>
+    <view class="row">
+      <vie><input type="text" placeholder="联系电话:" placeholder-style="color:black" 	disabled/></vie>
+      <vie><input type="text" placeholder="建议输入电话号码合法"  maxlength="11" bindinput="onTelephone"/></vie>
+    </view>
+    <view class="row">
+      <vie><input type="text" placeholder="截止服务时间:"placeholder-style="color:black" 	disabled/></vie>
+      <vie><input type="text" placeholder="建议输入想截止时间，如2022.3.6" bindinput="onDeadline"/></vie>
+    </view>
+  </view>
+</view>
+
+
+<view class="mean">
+  <view class="line">
+    <view class="row">
+      <view><input type="text" placeholder="备注:(不必要填写）" placeholder-style="color:black" 	disabled/></view>
+      <view><input type="text" placeholder="例如：写下你的愿意的价格区间或者其他要求" maxlength="30" bindinput="onItem"/></view>
+    </view>
+  </view>
+</view>
+  
+  <!-- 上传图片 -->
+  <!-- <view class="edg">
+  <view class="out_3">
+<view class="container">
+  <view bindtap="uploadimage" class="img_1">
+  <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fab790af1beb4aa695a19d6af3380ea506a1a55b4791d-eCjzn3_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649036807&t=cab70bee167af330d3c7dd1ce9fa43b9"></image>
+  </view>
+  <image wx:for="{{imageList}}" src="{{item}}"></image>
+</view>
+  </view>
+</view> -->
+<view class='pages'>
+ <view class='top'><text class='top_name'>添加文件：</text></view>
+ <!-- 图片 -->
+ <view class="images_box">
+  <text clsss="top_name_1">文件名为：{{temfile_name}}</text>
+  <block wx:key="imgbox" wx:for="{{imgbox}}">
+   <view class='img-box'>
+    <image class='img' src='{{item}}'></image>
+    <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+     <image class='img' src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F02%2F01%2F41%2F599d0bcab8424_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649139697&t=8366789671e3a34ac41d31ddc946f425'></image>  
+    </view>
+   </view>
+  </block>
+  <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+   <image class='img' src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fs.aigei.com%2Fprevfiles%2F6438a654b8ff491c9e55197d45ac1324.png%3Fe%3D1735488000%26token%3DP7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL%3A9zu9bpfop56MJvvo_RkePYkcvvM%3D&refer=http%3A%2F%2Fs.aigei.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649053262&t=267cd2ed64b5ba9f83ef5d2550bb0243'></image>  
+  </view>
+ </view>
+ <text clsss="top_name_1">注：出现文件名即可确认成功获取文件，只能上传一份文件（支持Word文件 后缀为doc）</text>
+</view>
+
+  <view class="down">
+<button type="primary" bindtap="fb">提交</button>
+</view>
+</view>
+
+<!-- <navigator url="{{url}}"> -->

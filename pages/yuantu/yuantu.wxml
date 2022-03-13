@@ -1,0 +1,4 @@
+<!--pages/yuantu/yuantu.wxml-->
+<view class="center">
+<image src="{{img_src}}"mode="aspectFit"></image>
+</view>

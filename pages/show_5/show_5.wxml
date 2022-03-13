@@ -1,0 +1,37 @@
+<!--pages/order/message/message.wxml-->
+<view class='message_nav'>
+ <form bindsubmit='FormSubmit'>
+ <view class='section'>
+ <textarea class='message1' type='text' placeholder="请选择或者输入捎话(60字以内)" maxlength='60' style="word-wrap:break-word" bindinput='bindTextAreaChange' value="{{message}}"></textarea>
+</view>
+ <view class='fast'>快速捎话：</view> 
+<checkbox-group class="checkboxChange">
+ <view wx:for="{{msgData}}" wx:key="{{index}}" data-index="{{index}}" data-id="{{item.child_id}}" data-checked='{{item.checked}}' bindtap='click' >
+ <checkbox value='{{item.msg}}' class='item' checked='{{item.checked}}' >{{item.msg}}</checkbox>
+ </view>
+</checkbox-group>
+<button class='submit' bindtap='submit' style="position: relative; left: -6rpx; top: 484rpx">留言</button>
+</form>
+<!-- 图片 -->
+<view class='pages'>
+ <view class='top'><text class='top_name'>添加图片：</text></view>
+ <!-- 图片 -->
+ <view class="images_box">
+  <block wx:key="imgbox" wx:for="{{imgbox}}">
+   <view class='img-box'>
+    <image class='img' src='{{item}}'></image>
+    <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+      <image class='img' src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.51yuansu.com%2Fpic3%2Fcover%2F02%2F01%2F41%2F599d0bcab8424_610.jpg&refer=http%3A%2F%2Fpic.51yuansu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649139697&t=8366789671e3a34ac41d31ddc946f425'></image> 
+    </view>
+   </view>
+  </block>
+  <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+    <image class='img' src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fs.aigei.com%2Fprevfiles%2F6438a654b8ff491c9e55197d45ac1324.png%3Fe%3D1735488000%26token%3DP7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL%3A9zu9bpfop56MJvvo_RkePYkcvvM%3D&refer=http%3A%2F%2Fs.aigei.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649053262&t=267cd2ed64b5ba9f83ef5d2550bb0243'></image>  
+  </view>
+ </view>
+</view>
+  <view class="out">
+    <view class="log"><input placeholder="留下你的名字再走吧" placeholder-style="color:black" disabled/></view>
+    <view class="log"> <input placeholder="啊 ，不会不知道可以匿名吧！！" bindinput="onName"/></view>
+  </view>
+</view>

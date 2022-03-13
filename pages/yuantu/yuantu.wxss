@@ -1,0 +1,10 @@
+/* pages/yuantu/yuantu.wxss */
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+ image{
+  width: 1000rpx;
+  height:1060rpx
+}
