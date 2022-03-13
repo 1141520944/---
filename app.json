@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/show/show",
+    "pages/home/home",
+    "pages/show_1/show_1",
+    "pages/function_2/function_2",
+    "pages/function_3/function_3",
+    "pages/function_4/function_4",
+    "pages/yuantu/yuantu",
+    "pages/function_5/function_5",
+    "pages/show_5/show_5",
+    "pages/jiedan/jiedan",
+    "pages/show_2/show_2",
+    "pages/page_1_1/page_1_1",
+    "pages/function_6/function_6",
+    "pages/show_6/show_6",
+    "pages/yujian/yujian",
+    "pages/show_2_2/show_2_2",
+    "pages/show_1_1/show_1_1",
+    "pages/show_6_6/show_6_6",
+    "pages/location/location"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#14a322",
+    "navigationBarTitleText": "轻宿",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/首页.png",
+        "selectedIconPath": "/image/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "购物车",
+        "iconPath": "/image/购物车空.png",
+        "selectedIconPath": "/image/购物车空 (2).png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "/image/我的.png",
+        "selectedIconPath": "/image/我的 (1).png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
